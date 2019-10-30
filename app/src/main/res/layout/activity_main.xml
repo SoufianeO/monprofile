@@ -7,16 +7,32 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <ImageView
-        android:id="@+id/imageView"
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:adjustViewBounds="false"
-        android:background="@drawable/rectangle"
-        android:contentDescription="@string/upprofile"
-        android:visibility="visible"
-        tools:srcCompat="@drawable/profile11"
-        tools:visibility="visible" />
+        android:layout_height="0dp"
+        android:layout_weight="0.3">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/rectangle"
+            android:contentDescription="@string/upprofile" />
+
+        <ImageView
+            android:layout_width="74dp"
+            android:layout_height="68dp"
+            android:layout_gravity="start|bottom"
+            android:adjustViewBounds="true"
+            android:contentDescription="@string/profile"
+            android:src="@drawable/profile11" />
+
+    </FrameLayout>
+
+    <FrameLayout android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6">
 
     <com.google.android.material.tabs.TabLayout
         android:layout_width="match_parent"
@@ -31,18 +47,19 @@
 
 
         <com.google.android.material.tabs.TabItem
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
             android:id="@+id/tab2"
             android:text="@string/revision_map" />
+
     </com.google.android.material.tabs.TabLayout>
 
-    <androidx.viewpager.widget.ViewPager
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/viewPager"
-        ></androidx.viewpager.widget.ViewPager>
+        <androidx.viewpager.widget.ViewPager
+            android:id="@+id/viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"></androidx.viewpager.widget.ViewPager>
 
+    </FrameLayout>
 
 </androidx.appcompat.widget.LinearLayoutCompat>
 

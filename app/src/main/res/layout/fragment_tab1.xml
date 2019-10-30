@@ -1,32 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:orientation="vertical" android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <ImageView
-        android:id="@+id/imageView1"
+    <TextView
+        android:id="@+id/textView1"
         android:layout_width="match_parent"
-        android:layout_height="81dp"
-        android:contentDescription="@string/imageview1"
-        app:srcCompat="@drawable/rectangle1"
-        tools:srcCompat="@drawable/ellipse2" />
+        android:layout_height="114dp"
+        android:gravity="bottom|center"
+        android:text="@string/message1" />
 
-    <ImageView
-        android:id="@+id/imageView2"
+    <TextView
+        android:id="@+id/textView2"
         android:layout_width="match_parent"
-        android:layout_height="81dp"
-        android:contentDescription="@string/imageview2"
-        app:srcCompat="@drawable/rectangle1"
-        tools:srcCompat="@drawable/ellipse2" />
+        android:layout_height="59dp"
+        android:gravity="center"
+        android:text="@string/message2" />
 
-    <ImageView
-        android:id="@+id/imageView3"
+    <TextView
+        android:id="@+id/textView3"
         android:layout_width="match_parent"
-        android:layout_height="81dp"
-        android:contentDescription="@string/imageview3"
-        app:srcCompat="@drawable/rectangle1"
-        tools:srcCompat="@drawable/ellipse2" />
+        android:layout_height="30dp"
+        android:gravity="center"
+        android:text="@string/message3" />
 
 </LinearLayout>

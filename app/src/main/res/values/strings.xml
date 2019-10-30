@@ -9,4 +9,8 @@
     <string name="imageview1">imageView1</string>
     <string name="imageview2">imageView2</string>
     <string name="imageview3">imageView3</string>
+    <string name="profile">profile</string>
+    <string name="message1">message1</string>
+    <string name="message2">message2</string>
+    <string name="message3">message3</string>
 </resources>
